@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+      
+     <context:annotation-config></context:annotation-config>
+     
+     
+      <bean id="heart"  class="com.DI.Annotations.Heart"></bean>
+      <bean id="eyes" class="com.DI.Annotations.Eyes"></bean>
+      <bean id="ab" class="com.DI.Annotations.Human" ></bean>
+      
+      <bean id ="abcd" class="com.DI.Annotations.Heart">
+      <property name="pen" value="Reynolds"></property>
+      <property name="Price" value="10"></property>
+      </bean>
+      
+      
+      
+      </beans>
+        
+<!--         <dependency> -->
+<!--     <groupId>org.springframework</groupId> -->
+<!--     <artifactId>spring-context</artifactId> -->
+<!--     <version>5.3.16</version> -->
+<!-- </dependency> -->
+        
+      
+        
