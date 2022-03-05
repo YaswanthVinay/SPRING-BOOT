@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+	<!-- u r l -->
+		
+		<property name="hibernate.connection.url">
+		jdbc:mysql://localhost:3306/mydatabase</property>
+		
+	<!-- user name -->
+		
+		<property name="hibernate.connection.username">root</property>
+		
+	<!-- password -->
+		
+		<property name="hibernate.connection.password"></property>
+		
+	<!-- driver -->
+		
+		<property name="hibernate.connection.driver_Class">
+		com.mysql.cj.jdbc.Driver</property>
+		
+	<!-- Enable Logger-->
+	
+		<property name="hibernate.show_sql">true</property>
+
+
+	</session-factory>
+</hibernate-configuration>
